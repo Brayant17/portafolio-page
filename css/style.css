@@ -47,6 +47,8 @@ body{
     background-color: black;
 }
 
+/* header */
+
 header{
     color: white;
     height: 100vh;
@@ -116,6 +118,45 @@ ul li:hover{
 .name-title{
     color: var(--orange);
 }
+
+/* Footer */
+footer{
+    padding: 35px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-derecha{
+    flex-basis: 20%;
+}
+
+.footer-derecha form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-derecha form input, textarea{
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.form-element{
+    margin: 5px 0;
+}
+
 
 /* Animaciones */
 @keyframes down{
