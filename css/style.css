@@ -9,6 +9,40 @@
     --orange: rgb(247, 177, 48);
 }
 
+/* Scroll bar */
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
 body{
     background-color: black;
 }
@@ -34,6 +68,7 @@ nav{
 
 ul{
     list-style-type: none;
+    padding: 15px;
 }
 
 ul li{
@@ -66,6 +101,28 @@ ul li:hover{
     font-size: 2rem;
 }
 
+.home i{
+    font-size: 2rem;
+    line-height: 2;
+    margin: 25px 0 0 0;
+    cursor: pointer;
+    animation-name: down;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
 .name-title{
     color: var(--orange);
+}
+
+/* Animaciones */
+@keyframes down{
+    from {
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }
