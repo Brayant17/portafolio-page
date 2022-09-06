@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontMain);
+}
+
+:root{
+    --fontMain: 'Montserrat', sans-serif;
+    --white: white;
+    --green: green;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    color: var(--white);
+}
+
+/* navBar */
+nav{
+    margin: 0 auto;
+    width: 98%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* home-info */
+.home{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    align-content: center;
+}
+
+.home-info{
+    position: relative;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.home-title{
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.home-title span{
+    display: block;    
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-description{
+    margin-left: 5px;
+    font-size: 2rem;
+    letter-spacing: .8rem;
+}
+
+.home-button-space{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-button{
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 12px 55px;
+    border-radius: 20px;
+    background: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: .6s ease;
+}
+
+/* .home-button:hover{
+    color: black;
+    background-color: var(--white);
+} */
