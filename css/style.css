@@ -25,7 +25,7 @@ header{
 nav{
     margin: 0 auto;
     width: 98%;
-    padding: 5px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,17 +44,26 @@ ul li{
 ul li a{
     text-decoration: none;
     color: var(--white);
+    transition: .5s ease;
+}
+
+ul li a:hover{
+    color: var(--green);
 }
 
 /* home-info */
 .home{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     align-items: center;
     align-content: center;
+}
+
+.home-none{
+    height: 100vh;
 }
 
 .home-info{
@@ -101,7 +110,26 @@ ul li a{
     transition: .6s ease;
 }
 
-/* .home-button:hover{
+.home-button:hover{
     color: black;
     background-color: var(--white);
-} */
+}
+
+.social-media{
+    position: absolute;
+    bottom: 50px;
+    left: 6%;
+    transform: translateX(-25%);
+}
+
+.social-media a i{
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 10px;
+    transition: .5s ease;
+}
+
+.social-media a i:hover{
+    color: var(--green);
+}
